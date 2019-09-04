@@ -13,3 +13,4 @@ Route::group(['middleware' => 'jwt.auth', 'namespace' => 'Api\\'], function() {
 //Cadastro de Eventos
 
 Route::post('auth/cadastrar','Api\EventosController@cadastrar');
+Route::get('auth/index', 'Api\EventosController@index');
